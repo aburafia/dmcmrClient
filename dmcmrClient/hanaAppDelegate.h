@@ -6,9 +6,16 @@
 //  Copyright (c) 2014年 hanahana. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
 
-@interface hanaAppDelegate : UIResponder <UIApplicationDelegate>
+#import <UIKit/UIKit.h>
+#import <CoreBluetooth/CoreBluetooth.h>
+
+@interface hanaAppDelegate : UIResponder <UIApplicationDelegate,
+CBPeripheralManagerDelegate>{
+    CBPeripheralManager *peripheralManager;
+    CBMutableService *service;
+    CBCharacteristic *characteristic;
+}
 
 @property (strong, nonatomic) UIWindow *window;
 

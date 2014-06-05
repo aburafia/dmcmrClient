@@ -19,6 +19,7 @@
 		424263AB193B83AD0089A395 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 424263A9193B83AD0089A395 /* MainStoryboard_iPhone.storyboard */; };
 		424263AE193B83AD0089A395 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 424263AC193B83AD0089A395 /* MainStoryboard_iPad.storyboard */; };
 		424263B1193B83AD0089A395 /* hanaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 424263B0193B83AD0089A395 /* hanaViewController.m */; };
+		42D94C6E193F453E003A32AB /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42D94C6D193F453E003A32AB /* CoreBluetooth.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,7 @@
 		424263AD193B83AD0089A395 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		424263AF193B83AD0089A395 /* hanaViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = hanaViewController.h; sourceTree = "<group>"; };
 		424263B0193B83AD0089A395 /* hanaViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = hanaViewController.m; sourceTree = "<group>"; };
+		42D94C6D193F453E003A32AB /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42D94C6E193F453E003A32AB /* CoreBluetooth.framework in Frameworks */,
 				42426392193B83AD0089A395 /* UIKit.framework in Frameworks */,
 				42426394193B83AD0089A395 /* Foundation.framework in Frameworks */,
 				42426396193B83AD0089A395 /* CoreGraphics.framework in Frameworks */,
@@ -75,6 +78,7 @@
 		42426390193B83AD0089A395 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				42D94C6D193F453E003A32AB /* CoreBluetooth.framework */,
 				42426391193B83AD0089A395 /* UIKit.framework */,
 				42426393193B83AD0089A395 /* Foundation.framework */,
 				42426395193B83AD0089A395 /* CoreGraphics.framework */,
@@ -275,10 +279,13 @@
 		424263B5193B83AD0089A395 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "dmcmrClient/dmcmrClient-Prefix.pch";
 				INFOPLIST_FILE = "dmcmrClient/dmcmrClient-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "3BDEB784-A9D3-4EC7-9BB5-AEFFD4647126";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -286,9 +293,11 @@
 		424263B6193B83AD0089A395 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "dmcmrClient/dmcmrClient-Prefix.pch";
 				INFOPLIST_FILE = "dmcmrClient/dmcmrClient-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -313,6 +322,7 @@
 				424263B6193B83AD0089A395 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
