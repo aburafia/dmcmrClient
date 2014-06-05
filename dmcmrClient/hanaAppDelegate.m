@@ -8,6 +8,7 @@
 
 #import "hanaAppDelegate.h"
 
+#define MYID @"asdf"
 #define SERVICE_UUID @"48596A53-8DF0-4BEE-A4DD-8CB2DFBC4D20"
 #define CHARACTERISTIC_UUID @"2B6B1035-28B8-4BD4-ACB2-538D350E9DFF"
 
@@ -22,11 +23,15 @@
     
     peripheralManager = [[CBPeripheralManager alloc] initWithDelegate:self queue:nil];
     
+    //自分自身のIDをbyteでわたす
+    NSData *myuid = [MYID dataUsingEncoding:NSUTF8StringEncoding];
+    
     //サービスとキャラクタリスティックを構築する
     CBUUID *characteristicUUID = [CBUUID UUIDWithString:CHARACTERISTIC_UUID];
     characteristic = [[CBMutableCharacteristic alloc] initWithType:characteristicUUID
                                                         properties:CBCharacteristicPropertyRead
-                                                             value:nil permissions:CBAttributePermissionsReadable];
+                                                             value:myuid
+                                                       permissions:CBAttributePermissionsReadable];
     CBUUID *serviceUUID = [CBUUID UUIDWithString:SERVICE_UUID];
     service = [[CBMutableService alloc] initWithType:serviceUUID primary:YES];
     service.characteristics = @[characteristic];
@@ -70,7 +75,6 @@
         
     }
 }
-
 -(void)startAdvertisingTouched
 {
     NSLog(@"startAdvertisingTouched");
@@ -98,6 +102,14 @@
     }
 }
 
+/*
+
+//ここはreadの値が変わるのが前提。
+//現在valueに最初からmyidをいれてるから、managerからreadされても、このイベントは発生しない
+//仕様的にだからいらないとおもう。
+ 
+ 
+ 
 //そして、最後にセントラルからの接続と要求を受けて、結果をセントラルに返す処理です。
 //セントラルから要求を受けると、peripheralManager:didReceiveReadRequest:がコールされます。
 -(void)peripheralManager:(CBPeripheralManager *)peripheral didReceiveReadRequest:(CBATTRequest *)request
@@ -112,7 +124,7 @@
     
     [peripheralManager respondToRequest:request withResult:CBATTErrorAttributeNotFound];
 }
-
+*/
 
 
 
