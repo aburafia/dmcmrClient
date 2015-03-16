@@ -12,3 +12,6 @@
     #import <UIKit/UIKit.h>
     #import <Foundation/Foundation.h>
 #endif
+
+#define SERVICE_UUID @"48596A53-8DF0-4BEE-A4DD-8CB2DFBC4D20"
+#define CHARACTERISTIC_UUID @"2B6B1035-28B8-4BD4-ACB2-538D350E9DFF"

@@ -18,8 +18,17 @@
 		424263A8193B83AD0089A395 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 424263A7193B83AD0089A395 /* Default-568h@2x.png */; };
 		424263AB193B83AD0089A395 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 424263A9193B83AD0089A395 /* MainStoryboard_iPhone.storyboard */; };
 		424263AE193B83AD0089A395 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 424263AC193B83AD0089A395 /* MainStoryboard_iPad.storyboard */; };
-		424263B1193B83AD0089A395 /* hanaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 424263B0193B83AD0089A395 /* hanaViewController.m */; };
+		42A7B22C1AAB2FA200850638 /* Tweeter.m in Sources */ = {isa = PBXBuildFile; fileRef = 42A7B22B1AAB2FA200850638 /* Tweeter.m */; };
+		42A7B2301AAB31F900850638 /* BlePeripheral.m in Sources */ = {isa = PBXBuildFile; fileRef = 42A7B22F1AAB31F900850638 /* BlePeripheral.m */; };
+		42A7B2331AAB355900850638 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42A7B2321AAB355900850638 /* TestViewController.m */; };
 		42D94C6E193F453E003A32AB /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42D94C6D193F453E003A32AB /* CoreBluetooth.framework */; };
+		42FAD7341969185600972D68 /* gear.png in Resources */ = {isa = PBXBuildFile; fileRef = 42FAD7321969185600972D68 /* gear.png */; };
+		42FAD7351969185600972D68 /* layer.png in Resources */ = {isa = PBXBuildFile; fileRef = 42FAD7331969185600972D68 /* layer.png */; };
+		42FAD73719691A2500972D68 /* tutaya_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 42FAD73619691A2500972D68 /* tutaya_logo.png */; };
+		42FAD73A19691CD200972D68 /* BootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42FAD73919691CD200972D68 /* BootViewController.m */; };
+		42FAD73C1969242A00972D68 /* tutaya_logo_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 42FAD73B1969242A00972D68 /* tutaya_logo_icon.png */; };
+		42FAD73E1969261900972D68 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42FAD73D1969261900972D68 /* Social.framework */; };
+		42FAD740196926CE00972D68 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42FAD73F196926CE00972D68 /* Accounts.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,9 +47,21 @@
 		424263A7193B83AD0089A395 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		424263AA193B83AD0089A395 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		424263AD193B83AD0089A395 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
-		424263AF193B83AD0089A395 /* hanaViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = hanaViewController.h; sourceTree = "<group>"; };
-		424263B0193B83AD0089A395 /* hanaViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = hanaViewController.m; sourceTree = "<group>"; };
+		42A7B22A1AAB2FA200850638 /* Tweeter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tweeter.h; sourceTree = "<group>"; };
+		42A7B22B1AAB2FA200850638 /* Tweeter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tweeter.m; sourceTree = "<group>"; };
+		42A7B22E1AAB31F900850638 /* BlePeripheral.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlePeripheral.h; sourceTree = "<group>"; };
+		42A7B22F1AAB31F900850638 /* BlePeripheral.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlePeripheral.m; sourceTree = "<group>"; };
+		42A7B2311AAB355900850638 /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
+		42A7B2321AAB355900850638 /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
 		42D94C6D193F453E003A32AB /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		42FAD7321969185600972D68 /* gear.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gear.png; sourceTree = "<group>"; };
+		42FAD7331969185600972D68 /* layer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = layer.png; sourceTree = "<group>"; };
+		42FAD73619691A2500972D68 /* tutaya_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tutaya_logo.png; sourceTree = "<group>"; };
+		42FAD73819691CD200972D68 /* BootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BootViewController.h; sourceTree = "<group>"; };
+		42FAD73919691CD200972D68 /* BootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BootViewController.m; sourceTree = "<group>"; };
+		42FAD73B1969242A00972D68 /* tutaya_logo_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tutaya_logo_icon.png; sourceTree = "<group>"; };
+		42FAD73D1969261900972D68 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		42FAD73F196926CE00972D68 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +69,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42FAD740196926CE00972D68 /* Accounts.framework in Frameworks */,
+				42FAD73E1969261900972D68 /* Social.framework in Frameworks */,
 				42D94C6E193F453E003A32AB /* CoreBluetooth.framework in Frameworks */,
 				42426392193B83AD0089A395 /* UIKit.framework in Frameworks */,
 				42426394193B83AD0089A395 /* Foundation.framework in Frameworks */,
@@ -64,6 +87,7 @@
 				42426397193B83AD0089A395 /* dmcmrClient */,
 				42426390193B83AD0089A395 /* Frameworks */,
 				4242638F193B83AD0089A395 /* Products */,
+				42FAD7311969185600972D68 /* image */,
 			);
 			sourceTree = "<group>";
 		};
@@ -78,6 +102,8 @@
 		42426390193B83AD0089A395 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				42FAD73F196926CE00972D68 /* Accounts.framework */,
+				42FAD73D1969261900972D68 /* Social.framework */,
 				42D94C6D193F453E003A32AB /* CoreBluetooth.framework */,
 				42426391193B83AD0089A395 /* UIKit.framework */,
 				42426393193B83AD0089A395 /* Foundation.framework */,
@@ -89,13 +115,17 @@
 		42426397193B83AD0089A395 /* dmcmrClient */ = {
 			isa = PBXGroup;
 			children = (
+				42A7B22D1AAB31CC00850638 /* ble */,
+				42A7B2291AAB2F7B00850638 /* sns */,
+				42FAD73819691CD200972D68 /* BootViewController.h */,
+				42FAD73919691CD200972D68 /* BootViewController.m */,
 				424263A0193B83AD0089A395 /* hanaAppDelegate.h */,
 				424263A1193B83AD0089A395 /* hanaAppDelegate.m */,
 				424263A9193B83AD0089A395 /* MainStoryboard_iPhone.storyboard */,
 				424263AC193B83AD0089A395 /* MainStoryboard_iPad.storyboard */,
-				424263AF193B83AD0089A395 /* hanaViewController.h */,
-				424263B0193B83AD0089A395 /* hanaViewController.m */,
 				42426398193B83AD0089A395 /* Supporting Files */,
+				42A7B2311AAB355900850638 /* TestViewController.h */,
+				42A7B2321AAB355900850638 /* TestViewController.m */,
 			);
 			path = dmcmrClient;
 			sourceTree = "<group>";
@@ -112,6 +142,36 @@
 				424263A7193B83AD0089A395 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		42A7B2291AAB2F7B00850638 /* sns */ = {
+			isa = PBXGroup;
+			children = (
+				42A7B22A1AAB2FA200850638 /* Tweeter.h */,
+				42A7B22B1AAB2FA200850638 /* Tweeter.m */,
+			);
+			name = sns;
+			sourceTree = "<group>";
+		};
+		42A7B22D1AAB31CC00850638 /* ble */ = {
+			isa = PBXGroup;
+			children = (
+				42A7B22E1AAB31F900850638 /* BlePeripheral.h */,
+				42A7B22F1AAB31F900850638 /* BlePeripheral.m */,
+			);
+			name = ble;
+			sourceTree = "<group>";
+		};
+		42FAD7311969185600972D68 /* image */ = {
+			isa = PBXGroup;
+			children = (
+				42FAD73619691A2500972D68 /* tutaya_logo.png */,
+				42FAD7321969185600972D68 /* gear.png */,
+				42FAD7331969185600972D68 /* layer.png */,
+				42FAD73B1969242A00972D68 /* tutaya_logo_icon.png */,
+			);
+			name = image;
+			path = dmcmrClient/image;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,6 +203,11 @@
 				CLASSPREFIX = hana;
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = hanahana;
+				TargetAttributes = {
+					4242638D193B83AD0089A395 = {
+						DevelopmentTeam = E6M8QXW46T;
+					};
+				};
 			};
 			buildConfigurationList = 42426389193B83AD0089A395 /* Build configuration list for PBXProject "dmcmrClient" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -167,11 +232,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				4242639C193B83AD0089A395 /* InfoPlist.strings in Resources */,
+				42FAD7351969185600972D68 /* layer.png in Resources */,
+				42FAD7341969185600972D68 /* gear.png in Resources */,
 				424263A4193B83AD0089A395 /* Default.png in Resources */,
 				424263A6193B83AD0089A395 /* Default@2x.png in Resources */,
 				424263A8193B83AD0089A395 /* Default-568h@2x.png in Resources */,
 				424263AB193B83AD0089A395 /* MainStoryboard_iPhone.storyboard in Resources */,
 				424263AE193B83AD0089A395 /* MainStoryboard_iPad.storyboard in Resources */,
+				42FAD73719691A2500972D68 /* tutaya_logo.png in Resources */,
+				42FAD73C1969242A00972D68 /* tutaya_logo_icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -182,9 +251,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42A7B2331AAB355900850638 /* TestViewController.m in Sources */,
 				4242639E193B83AD0089A395 /* main.m in Sources */,
 				424263A2193B83AD0089A395 /* hanaAppDelegate.m in Sources */,
-				424263B1193B83AD0089A395 /* hanaViewController.m in Sources */,
+				42FAD73A19691CD200972D68 /* BootViewController.m in Sources */,
+				42A7B22C1AAB2FA200850638 /* Tweeter.m in Sources */,
+				42A7B2301AAB31F900850638 /* BlePeripheral.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,12 +352,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "dmcmrClient/dmcmrClient-Prefix.pch";
 				INFOPLIST_FILE = "dmcmrClient/dmcmrClient-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "3BDEB784-A9D3-4EC7-9BB5-AEFFD4647126";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -294,11 +367,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "dmcmrClient/dmcmrClient-Prefix.pch";
 				INFOPLIST_FILE = "dmcmrClient/dmcmrClient-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

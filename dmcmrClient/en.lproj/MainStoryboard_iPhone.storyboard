@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13D65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="n5D-MF-Vho">
     <dependencies>
-        <deployment defaultVersion="1552" identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
     </dependencies>
     <scenes>
-        <!--Hana View Controller-->
+        <!--Test View Controller-->
         <scene sceneID="5">
             <objects>
-                <viewController id="2" customClass="hanaViewController" sceneMemberID="viewController">
+                <viewController id="2" customClass="TestViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="7go-Hk-abC"/>
                         <viewControllerLayoutGuide type="bottom" id="v9s-3f-1oz"/>
@@ -16,13 +16,150 @@
                     <view key="view" contentMode="scaleToFill" id="3">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="好きなキーワードを入力してください （キーワードの間にスペースを入れてください。）" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IUP-oT-Sng">
+                                <rect key="frame" x="0.0" y="49" width="320" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uqe-Y9-oBY">
+                                <rect key="frame" x="40" y="138" width="240" height="308"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="twR-zJ-w8i">
+                                <rect key="frame" x="132" y="92" width="46" height="30"/>
+                                <state key="normal" title="登録">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onTouchDownRegist:" destination="2" eventType="touchDown" id="RXh-xU-l2Z"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.69305082019999997" green="0.92917600079999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="" image="tutaya_logo_icon.png" id="gU1-dn-7tZ"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="KeywordsTextView" destination="uqe-Y9-oBY" id="jHH-xd-Yyl"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="585" y="-87"/>
+        </scene>
+        <!--レンタル履歴-->
+        <scene sceneID="VH5-vL-gIU">
+            <objects>
+                <tableViewController id="94Q-uN-UBT" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="knK-P1-qk0">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="HM0-l1-kxN">
+                                <rect key="frame" x="0.0" y="22" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="HM0-l1-kxN" id="7MF-39-DN4">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="94Q-uN-UBT" id="6Rk-Oz-9rt"/>
+                            <outlet property="delegate" destination="94Q-uN-UBT" id="ro8-7P-UL9"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="レンタル履歴" image="layer.png" id="sDg-wf-ohf"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9UV-gW-A9O" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="585" y="614"/>
+        </scene>
+        <!--Boot View Controller-->
+        <scene sceneID="WzF-Ku-UoQ">
+            <objects>
+                <viewController id="n5D-MF-Vho" customClass="BootViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dvs-Sn-7WE"/>
+                        <viewControllerLayoutGuide type="bottom" id="zuC-jD-Pwv"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="p8N-iV-ZbY">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="tutaya_logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="1Ir-xy-ILY">
+                                <rect key="frame" x="48" y="130" width="225" height="225"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hcy-MR-yak">
+                                <rect key="frame" x="98" y="376" width="100" height="51"/>
+                                <state key="normal" title="ログイン">
+                                    <color key="titleColor" red="0.98431378602981567" green="0.70196080207824707" blue="0.17647059261798859" alpha="1" colorSpace="deviceRGB"/>
+                                    <color key="titleShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="rHq-99-D7Y" kind="modal" id="kgY-dP-7Ai"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.11204721775018527" green="5.2393306510563483e-05" blue="0.68747877038043481" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tnI-Xz-wag" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-434" y="623"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="tz5-Bl-jiv">
+            <objects>
+                <tabBarController definesPresentationContext="YES" id="rHq-99-D7Y" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="3Dc-y9-9q8"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="E7n-se-Jj2">
+                        <rect key="frame" x="129" y="330" width="163" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="2" kind="relationship" relationship="viewControllers" id="6gr-nC-UoL"/>
+                        <segue destination="94Q-uN-UBT" kind="relationship" relationship="viewControllers" id="dnj-vG-lft"/>
+                        <segue destination="OQ5-YJ-x4A" kind="relationship" relationship="viewControllers" id="1xy-lA-kqt"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6XA-rQ-eVI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="44" y="623"/>
+        </scene>
+        <!--設定-->
+        <scene sceneID="jhz-TV-jPX">
+            <objects>
+                <viewController id="OQ5-YJ-x4A" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zSZ-zP-pIn"/>
+                        <viewControllerLayoutGuide type="bottom" id="3xs-Qw-GwG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Kp2-0f-P3X">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="設定" image="gear.png" id="yp8-5A-THM"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="h6C-HN-vtZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="585" y="1301"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="gear.png" width="30" height="30"/>
+        <image name="layer.png" width="30" height="30"/>
+        <image name="tutaya_logo.png" width="225" height="225"/>
+        <image name="tutaya_logo_icon.png" width="50" height="50"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
